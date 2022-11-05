@@ -1,5 +1,5 @@
 name: Deploy Project
-on: push
+on: [push, workflow_dispatch]
 jobs:
   tests:
   #Ubuntu-latest already comes with node@16
