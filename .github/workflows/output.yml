@@ -1,0 +1,9 @@
+name: Output Information
+on: workflow_dispatch
+jobs:
+# To get dynamic context values, such as env vars, secrets:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log GH Context values
+        run: echo "${{ toJSON(github) }}"
